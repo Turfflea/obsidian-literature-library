@@ -1,0 +1,11 @@
+/main.js
+/dist/
+/node_modules/
+/.obsidian/
+/data.json
+/.env
+/.env.*
+/SUBMISSION-STATUS.md
+*.log
+.DS_Store
+Thumbs.db

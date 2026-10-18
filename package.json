@@ -1,0 +1,15 @@
+{
+  "name": "literature-library",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Organize academic papers and related files in Obsidian.",
+  "author": "Truffle (Turfflea)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/main.js && node scripts/check.mjs"
+  }
+}

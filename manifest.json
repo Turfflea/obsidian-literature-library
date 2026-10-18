@@ -1,0 +1,9 @@
+{
+  "id": "literature-library",
+  "name": "Literature Library 文献库",
+  "version": "0.1.0",
+  "minAppVersion": "1.11.4",
+  "description": "Organize papers as collapsible entries with configurable PDF, OCR, translation, and note files, title-based naming, metadata lookup, and optional OCR and translation services.",
+  "author": "Truffle",
+  "isDesktopOnly": true
+}
