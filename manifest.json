@@ -1,7 +1,7 @@
 {
   "id": "literature-library",
   "name": "Literature Library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minAppVersion": "1.11.4",
   "description": "Organize papers as collapsible entries with configurable PDF, OCR, translation, and note files, title-based naming, metadata lookup, and optional OCR and translation services.",
   "author": "Truffle",

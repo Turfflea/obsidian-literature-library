@@ -1,3 +1,8 @@
+# 0.1.2
+
+- Give the JavaScript source entry its own filename so clean build verification can regenerate main.js.
+- Replace an important CSS declaration with a more specific selector for role picker buttons.
+
 # 0.1.1
 
 - Use the Basic Latin display name **Literature Library** required by the community directory. The plugin ID and file format are unchanged.

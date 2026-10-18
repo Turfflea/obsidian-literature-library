@@ -87,7 +87,7 @@ npm run check
 npm run build
 ```
 
-The build copies `src/main.js` to `main.js` and writes the three installation assets to `dist/`. No dependency installation is needed. Checks cover syntax, manifest fields, required files, and release defaults; they do not replace running the plugin in Obsidian.
+The build copies `src/plugin.js` to `main.js` and writes the three installation assets to `dist/`. The source entry uses a distinct filename so build verification can remove generated `main.js` files before rebuilding. No dependency installation is needed. Checks cover syntax, manifest fields, required files, and release defaults; they do not replace running the plugin in Obsidian.
 
 ## 中文说明
 

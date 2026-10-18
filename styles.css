@@ -128,12 +128,12 @@
 	gap: 8px;
 	margin: 12px 0;
 }
-.lit-role-button {
+.modal button.lit-role-button {
 	display: flex;
 	align-items: center;
 	gap: 8px;
 	justify-content: flex-start;
-	border-left: 4px solid var(--lit-slot-color) !important;
+	border-left: 4px solid var(--lit-slot-color);
 }
 .lit-role-skip {
 	display: flex;

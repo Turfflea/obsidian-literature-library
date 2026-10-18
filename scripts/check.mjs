@@ -5,7 +5,7 @@ const root = new URL("../", import.meta.url);
 const manifest = JSON.parse(await readFile(new URL("manifest.json", root), "utf8"));
 const pkg = JSON.parse(await readFile(new URL("package.json", root), "utf8"));
 const versions = JSON.parse(await readFile(new URL("versions.json", root), "utf8"));
-const source = await readFile(new URL("src/main.js", root), "utf8");
+const source = await readFile(new URL("src/plugin.js", root), "utf8");
 assert.match(manifest.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 assert.ok(!manifest.id.includes("obsidian"));
 assert.match(manifest.name, /^[A-Za-z0-9 +()-]+$/, "The community directory requires a Basic Latin display name.");
@@ -16,7 +16,7 @@ assert.ok(manifest.description.length <= 250 && manifest.description.endsWith(".
 assert.equal(typeof manifest.isDesktopOnly, "boolean");
 assert.ok(source.includes('const title = this.frontmatter(state.info)?.title;'));
 assert.ok(source.includes('apiUrl: ""'));
-for (const file of ["README.md", "LICENSE", "manifest.json", "styles.css", "src/main.js"]) {
+for (const file of ["README.md", "LICENSE", "manifest.json", "styles.css", "src/plugin.js"]) {
   const data = await readFile(new URL(file, root));
   assert.ok(data.length > 0, `${file} must not be empty.`);
   assert.notEqual(data.subarray(0, 3).toString("hex"), "efbbbf", `${file} must use UTF-8 without BOM.`);
