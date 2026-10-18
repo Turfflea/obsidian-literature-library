@@ -1,3 +1,7 @@
+# 0.1.1
+
+- Use the Basic Latin display name **Literature Library** required by the community directory. The plugin ID and file format are unchanged.
+
 # 0.1.0
 
 Initial community release candidate.

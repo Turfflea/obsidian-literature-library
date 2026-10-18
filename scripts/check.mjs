@@ -8,6 +8,7 @@ const versions = JSON.parse(await readFile(new URL("versions.json", root), "utf8
 const source = await readFile(new URL("src/main.js", root), "utf8");
 assert.match(manifest.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 assert.ok(!manifest.id.includes("obsidian"));
+assert.match(manifest.name, /^[A-Za-z0-9 +()-]+$/, "The community directory requires a Basic Latin display name.");
 assert.match(manifest.version, /^\d+\.\d+\.\d+$/);
 assert.equal(pkg.version, manifest.version);
 assert.equal(versions[manifest.version], manifest.minAppVersion);

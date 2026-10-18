@@ -28,7 +28,7 @@ Until the plugin is listed in Community plugins:
 1. Download `main.js`, `manifest.json`, and `styles.css` from a release.
 2. Create `<vault>/<configuration-folder>/plugins/literature-library/`. The default configuration folder is `.obsidian`.
 3. Place the three files in that folder.
-4. Restart Obsidian and enable **Literature Library 文献库** under **Settings → Community plugins**.
+4. Restart Obsidian and enable **Literature Library** under **Settings → Community plugins**.
 
 ## Quick start
 
